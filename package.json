@@ -4,14 +4,14 @@
 	"main": "lib/main.js",
 	"license": "MIT",
 	"homepage": "https://github.com/vickyhoo/antd-input-password",
-  "author": "vickyhoo <viczhlol@gmail.com>",
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:vickyhoo/antd-input-password.git"
-  },
-  "bugs": {
-    "url": "https://github.com/vickyhoo/antd-input-password/issues"
-  },
+	"author": "vickyhoo <viczhlol@gmail.com>",
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:vickyhoo/antd-input-password.git"
+	},
+	"bugs": {
+		"url": "https://github.com/vickyhoo/antd-input-password/issues"
+	},
 	"scripts": {
 		"start": "concurrently \"npm run rollup\" \"npm run storybook\" -n \"R,S\" -c \"blue,yellow\" --k",
 		"rollup": "rollup -c --watch",
@@ -20,7 +20,8 @@
 		"lint": "eslint .",
 		"precommit": "npm run lint",
 		"prepush": "npm run lint",
-		"prepare": "npm run build"
+		"prepare": "npm run build",
+		"deploy-storybook": "storybook-to-ghpages"
 	},
 	"dependencies": {
 		"prop-types": "^15.6.0"
@@ -34,6 +35,7 @@
 		"@storybook/addon-links": "^3.3.11",
 		"@storybook/addons": "^3.3.11",
 		"@storybook/react": "^3.3.11",
+		"@storybook/storybook-deployer": "^2.3.0",
 		"antd": "^3.3.0",
 		"babel-core": "^6.26.0",
 		"babel-eslint": "^7.2.3",
