@@ -24,10 +24,11 @@
 		"deploy-storybook": "storybook-to-ghpages"
 	},
 	"dependencies": {
-		"prop-types": "^15.6.0"
+		"prop-types": "^15.6.0",
+		"styled-components": "^3.2.3"
 	},
 	"peerDependencies": {
-		"antd": "^3.3.0",
+		"antd": "^3.0.0",
 		"react": "^16.0.0"
 	},
 	"devDependencies": {
@@ -58,8 +59,7 @@
 		"react-dom": "^16.0.0",
 		"rollup": "^0.55.1",
 		"rollup-plugin-babel": "^3.0.3",
-		"rollup-plugin-postcss": "^1.2.8",
-		"styled-components": "^3.2.3"
+		"rollup-plugin-postcss": "^1.2.8"
 	},
 	"files": [
 		"lib/"
